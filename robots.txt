@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://zetrextjg.github.io/sitemap.xml
+Sitemap: https://jgrzywaczewski.com//sitemap.xml
