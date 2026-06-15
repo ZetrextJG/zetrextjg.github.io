@@ -79,7 +79,12 @@ ninja.data = [
     {%- endfor -%}
   {%- endif -%}
   {%- for collection in site.collections -%}
-    {%- if collection.label != 'posts' -%}
+    {%- assign skip_collection = false -%}
+    {%- if collection.label == 'posts' -%}{%- assign skip_collection = true -%}{%- endif -%}
+    {%- if collection.label == 'books' and site.books_in_search == false -%}{%- assign skip_collection = true -%}{%- endif -%}
+    {%- if collection.label == 'news' and site.news_in_search == false -%}{%- assign skip_collection = true -%}{%- endif -%}
+    {%- if collection.label == 'teachings' and site.teachings_in_search == false -%}{%- assign skip_collection = true -%}{%- endif -%}
+    {%- unless skip_collection -%}
       {%- for item in collection.docs -%}
         {
           {%- if item.inline -%}
@@ -98,7 +103,7 @@ ninja.data = [
           {%- endunless -%}
         },
       {%- endfor -%}
-    {%- endif -%}
+    {%- endunless -%}
   {%- endfor -%}
   {%- if site.socials_in_search -%}
     {%- for social in site.data.socials -%}
