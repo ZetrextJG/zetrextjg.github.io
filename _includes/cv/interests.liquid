@@ -8,8 +8,11 @@
       {% if entry.icon %}
         <i class="{{ entry.icon }}"></i>
       {% endif %}
-      <strong>{{ entry.name }}:</strong>
-      {% if entry.keywords %}
+      {%- assign interest_name = entry.name | default: entry.label -%}
+      <strong>{{ interest_name }}:</strong>
+      {%- if entry.details %}
+        {{ entry.details }}
+      {%- elsif entry.keywords %}
         {% for keyword in entry.keywords %}
           {% if forloop.last %}
             {{ keyword }}
@@ -17,7 +20,7 @@
             {{ keyword }},
           {% endif %}
         {% endfor %}
-      {% endif %}
+      {%- endif %}
     </div>
   {% endfor %}
 </div>

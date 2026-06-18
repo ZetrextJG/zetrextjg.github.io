@@ -1,15 +1,8 @@
 cv:
   name: Jakub Grzywaczewski
-  label: Research Software Engineer & Data Scientist
+  website: https://jgrzywaczewski.com
   email: jakubzgrzywaczewski@gmail.com
-  phone: "+48 790 200 186"
-  location: Warsaw, Poland
-  image: ""
-  summary: Research Software Engineer at the Centre for Credible AI (CCAI) and MSc student in Mathematics and
-   Information Science at Warsaw University of Technology, where I also graduated with honors in Data Science engineering.
-   I focus on explainability of deep learning models using generative models, including diffusion models.
-   Presented a scientific paper at ICLR 2025 and getting ready to present another one at ICML 2026.
-   Former Python Developer at Samsung Research, where I worked on NLP projects and internal tooling. 
+
 
   social_networks:
     - network: GitHub
@@ -17,10 +10,8 @@ cv:
     - network: LinkedIn
       username: jakub-grzywaczewski-5b6801236
 
-  address:
-    city: Warsaw
-    region: Poland
-    countryCode: PL
+  phone: "+48 790 200 186"
+  location: Warsaw, Poland
 
   sections:
     Education:
@@ -28,8 +19,8 @@ cv:
         location: Warsaw, Poland
         url: https://www.pw.edu.pl/
         area: Data Science
-        studyType: MSc
-        start_date: 2025
+        degree: MSc
+        start_date: 2025-02
         end_date: present
         score: "In progress"
 
@@ -37,28 +28,27 @@ cv:
         location: Warsaw, Poland
         url: https://www.pw.edu.pl/
         area: Data Science
-        studyType: BSc(Eng)
-        start_date: 2021
-        end_date: 2025
-        score: "5 - Summa cum laude"
+        degree: BSc(Eng)
+        start_date: 2021-10
+        end_date: 2025-02
+        summary: "Graduated Summa cum laude"
 
     Experience:
       - company: Centre for Credible AI (CCAI)
         position: Research Software Engineer
         location: Warsaw, Poland
         url: https://credibleai.github.io/
-        start_date: 10.2025
+        start_date: 2025-10
         end_date: present
-        summary: Working on projects pushing the frontier of explainable AI, including practical application of generative AI for model validation and vision model depoisoning.
+        summary: Working on projects pushing the frontier of explainable AI, including model validation with Generative AI.
         highlights:
-          - Explained decision-making process of deep learning models using generative and diffusion models
-          - Co-authored a scientific paper which was accepted for ICML 2026
+          - Co-authored a scienctific paper on explaining the decision-making process of deep lung cancer models using generative/diffusion models. Results were accepted for ICML 2026
 
       - company: MI2
         position: Research Software Engineer
         location: Warsaw, Poland
-        start_date: 06.2024
-        end_date: 10.2025
+        start_date: 2024-06
+        end_date: 2025-10
         summary: Worked on explainability of deep learning models using generative and diffusion models.
         highlights:
           - Co-authored and presented a scientific paper at ICLR 2025
@@ -66,62 +56,78 @@ cv:
       - company: Samsung Research
         position: Python Developer
         location: Warsaw, Poland
-        start_date: 08.2022
-        end_date: 06.2024
+        start_date: 2022-08
+        end_date: 2024-06
         summary: Worked on NLP research projects and developed internal CLI and web tools for data processing.
         highlights:
-          - Developed and maintained NLP pipelines from both research and implementation perspectives
-          - Built internal CLI and web tools for data processing
+          - Developed and maintained NLP pipelines (automatic, CLI, Web) for both research and production
           - Completed time management training and applied PRINCE2 methodology basics
 
-    Publications:
-      - placeholder: true
+
+    Projects:
+      - name: Serolyzer (PvSTATEM)
+        start_date: 2024
+        end_date: 2026
+        location: https://mini-pw.github.io/SerolyzeR/
+        summary: an R package for automated analysis of serological data, currently used in the PvSTATEM global iniciative
+        highlights:
+          - Currently maintaining the package, implemented parsing methods for many MBA data format
+          - Desinged and implemented a Shiny Application for non-technical users 
+
+      - name: shrinkr
+        date: 2026
+        location: https://jgrzywaczewski.com/shrinkr/
+        summary: High Performance Open-Source Python+C package for Covariance Matrix shrinkage and LDA
+        highlights:
+          - Implemented novel covariance shrinkage methods in C, with bindings in Python
 
     Skills:
-      - name: Data Science
+      - label: Languages
         icon: fa-solid fa-chart-bar
-        keywords: "Python, NumPy, Pandas, Jupyter, Scikit-learn, PyTorch (Fabric), Transformers, SHAP, vLLM, Ray, ONNX, R, Tidyverse"
-
-      - name: Deep Learning & AI
+        details: "Python, Rust, C, Java, JavaScript, TypeScript, TeX"
+      - label: Data Science
+        icon: fa-solid fa-chart-bar
+        details: "NumPy, Pandas, Scikit-learn, PyTorch (Fabric), Transformers, SHAP, vLLM, ONNX, R"
+      - label: Deep Learning & AI
         icon: fa-solid fa-brain
-        keywords: "Neural Networks, Generative Models, Diffusion Models, Explainable AI, Computer Vision, NLP"
-
-      - name: Databases
+        details: "Generative Models, Diffusion Models, Explainable AI, Computer Vision, NLP"
+      - label: Databases
         icon: fa-solid fa-database
-        keywords: "PostgreSQL, MySQL, MS SQL Server, Redis, Hadoop"
-
-      - name: Compute & Cloud
+        details: "PostgreSQL, MySQL, MS SQL Server, MongoDB, Redis, Hadoop"
+      - label: Compute & Cloud
         icon: fa-solid fa-cloud
-        keywords: "SLURM, Kubeflow, GCP, Kubernetes"
-
-      - name: Web & Mobile
+        details: "SLURM, Kubeflow, GCP, Kubernetes"
+      - label: Web Development
         icon: fa-solid fa-globe
-        keywords: "JavaScript/TypeScript, Vue, Svelte, Dart (Flutter), Flask, FastAPI, Axum (Rust)"
-
-      - name: DevOps & Tooling
+        details: "Vue, Svelte, Flask, FastAPI"
+      - label: DevOps & Tooling
         icon: fa-solid fa-gear
-        keywords: "Git, Linux, Vim, Jenkins, GitHub Actions, Rust, Java, TeX"
+        details: "Git, Linux, Vim, Jenkins, GitHub Actions"
+
+    About Me:
+    - "My journey with programming began in 2017 when I taught myself basic C++. Over the years, my dedication and hard work have significantly expanded my skill set. In 2022, I joined Samsung Research as a Python Developer. My interest in machine learning was quickly recognized, and I have contributed to numerous Natural Language Processing (NLP) projects, both in research and implementation. Additionally, I developed internal command-line interfaces (CLI) and web tools for data processing. For nearly two years, I worked as a Research Software Engineer at MI², where I focused on explaining the decision-making processes of deep learning models using generative models, including diffusion models. This role also allowed me to present a scientific paper at the prestigious International Conference on Learning Representations (ICLR) in 2025. Currently, I am working with the Centre for Credible AI in Warsaw. Here, I am extending methods for model validation into medical and space domains, while also deepening my knowledge in contrastive learning models. Beyond my professional and academic pursuits, I served as the Vice President of the Mathematics Science Club."
 
     Languages:
-      - name: Polish
-        summary: "Native speaker"
-
-      - name: English
-        summary: "C1 Proficient"
+      - label: Polish
+        details: Native speaker
+      - label: English
+        details: C1 Proficient
 
     Interests:
-      - name: Generative Models for Explainable AI
+      - label: Generative Models for Explainable AI
         icon: fa-solid fa-tag
-        keywords: "Generative AI, Diffusion Models"
+        details: "Generative AI, Diffusion Models"
 
-      - name: Explainable AI
+      - label: Explainable AI
         icon: fa-solid fa-magnifying-glass
-        keywords: "Model Validation, Interpretability, Depoisoning"
+        details: "Model Validation, Interpretability, Depoisoning"
 
-      - name: Mathematics
+      - label: Mathematics
         icon: fa-solid fa-square-root-variable
-        keywords: "Probability, Statistics, Linear Algebra"
+        details: "Probability, Statistics, Linear Algebra"
 
-      - name: Hobbies
+      - label: Hobbies
         icon: fa-solid fa-heart
-        keywords: "Ping-pong, Music, Cooking"
+        details: "Ping-pong, Music, Cooking"
+
+
